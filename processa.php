@@ -4,11 +4,11 @@ $nome = $_POST['nome'];
 $email = $_POST['email'];
 
 // Conectar ao banco de dados
-$servername = "mysql.railway.internal";
+$servername = "localhost";
 $username = "root";
-$password = "yQGCRBuAgvDuuuKLialCkKLtwjVtfzNk"; // Se você configurou a senha, coloque-a aqui
-$dbname = "railway";
-$port = 3306; // Nova porta
+$password = ""; // Se você configurou a senha, coloque-a aqui
+$dbname = "banco_local";
+$port = 3307; // Nova porta
 
 // Cria a conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
